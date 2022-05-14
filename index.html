@@ -20,12 +20,14 @@
       
     </head>
     <body>
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
                 <a class="navbar-brand fw-bold" href="#page-top">Contrast Checker</a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                 </div>
+                <p style="margin-top: 20px;" class="text-center">© Ysl Ron</p>
             </div>
         </nav>
         <!-- Mashead header-->
@@ -39,24 +41,38 @@
                             <p class="lead fw-normal text-muted mb-5">A simple tool that can check whether the background is dark or light, and proper text color that is compatible with the background 
                                
                         </div>
+                
                         <p class="lead fw-normal">Pick a color 🎨</p>
                         <div id="swatch">
                             <input type="color" id="color" name="color" value="#000000">
                         </div>
-                        <div id="rgb">
-                           
-                        </div>
+                        
                     </div>
                     <div class="container row justify-content-center" id="example">
                         <h4 id="change" class="text-center">Text</h4>
                     </div>
                    
                 </div>
-                
+             
+               
+               
             </div>
         </header>
-     
-        
+        <div style="margin-left:100px">
+            <ul style="margin-top: 50px">
+                RGB Decimal value
+                <li id="r">
+    
+                </li>
+                <li id="g">
+                    
+                </li>
+                <li id="b">
+                    
+                </li>
+            </ul>
+
+        </div>
         <script src="//unpkg.com/brain.js"></script>
         <script src="script.js"></script>    
         <script src="hexToRgb.js"></script>

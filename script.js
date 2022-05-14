@@ -1,13 +1,20 @@
 const input = document.querySelector("input")
 const example = document.querySelector("#example")
-const get = document.querySelector("#rgb")
+const red = document.querySelector("r")
+const green = document.querySelector("g")
+const blue = document.querySelector("b")
+const body = document.body
+const div = document.createElement("div")
 
+r.innerHTML = "R: 0"
+g.innerHTML = "G: 0"
+b.innerHTML = "B: 0"
 
 input.addEventListener("change", (e) => {
   const rgb = getRgb(e.target.value);
  
   const network = new brain.NeuralNetwork()
-  console.log(rgb);
+
 
   network.train([
     { input: { r: 0.62, g: 0.72, b: 0.88 }, output: { light: 1 } },
@@ -26,10 +33,18 @@ input.addEventListener("change", (e) => {
     { input: {r: 0.41, g: 0.6, b: 0}, output: { dark: 1} },
   ])
 
+
   const result = brain.likely(rgb, network)
-  console.log(result);
+ 
+
   example.style.background = e.target.value
   example.style.color = result === "dark" ? "white" : "black"
+
+  r.innerHTML = "R: " + rgb.r
+  g.innerHTML = "G: " + rgb.g
+  b.innerHTML = "B: " + rgb.b
+  console.log(rgb);
+  console.log(rgbget);
 
 })
 
