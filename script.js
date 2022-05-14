@@ -3,9 +3,11 @@ const example = document.querySelector("#example")
 const red = document.querySelector("r")
 const green = document.querySelector("g")
 const blue = document.querySelector("b")
+const hex = document.querySelector("h")
 const body = document.body
 const div = document.createElement("div")
 
+h.innerHTML = "#000000"
 r.innerHTML = "R: 0"
 g.innerHTML = "G: 0"
 b.innerHTML = "B: 0"
@@ -33,18 +35,19 @@ input.addEventListener("change", (e) => {
     { input: {r: 0.41, g: 0.6, b: 0}, output: { dark: 1} },
   ])
 
-
+ 
   const result = brain.likely(rgb, network)
  
-
+  console.log(e.target.value)
   example.style.background = e.target.value
   example.style.color = result === "dark" ? "white" : "black"
-
+  
+  h.innerHTML = e.target.value;
   r.innerHTML = "R: " + rgb.r
   g.innerHTML = "G: " + rgb.g
   b.innerHTML = "B: " + rgb.b
   console.log(rgb);
-  console.log(rgbget);
+
 
 })
 
