@@ -1,0 +1,59 @@
+body {
+    font-family: helvetica neue;
+  }
+#example {
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+margin-left: 25px;
+
+    background: #000000;
+    color: white;
+    font-size: 36px;
+    border-radius: 50%;
+    box-shadow: #000000;
+  }
+
+  #swatch{
+    height: 100px;
+    width: 140px;
+    background-color: white;
+    box-shadow: 1px 1px 20px #00000015;
+  }
+  input[type="color"] {
+    border: red;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 100px;
+    width: 140px;
+    padding: 0;
+ 
+  }
+  
+  *:focus{
+    border-radius: 0;
+    outline: none;
+  }
+  
+  ::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  ::-webkit-color-swatch{
+    border: 0;
+    border-radius: 0;
+  }
+  
+  ::-moz-color-swatch,
+  ::-moz-focus-inner{
+    border: 0;
+  }
+  
+  ::-moz-focus-inner{
+    padding: 0;
+  }
