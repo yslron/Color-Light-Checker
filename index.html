@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Contrast Checker</title>
+        <title>Color Light Checker</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
+  
         <link href="style.css" rel="stylesheet" />
         <link href="bootstrap.css" rel="stylesheet" />
       
@@ -32,51 +33,83 @@
         </nav>
         <!-- Mashead header-->
         <header class="masthead gradient-end-color">
-            <div class="container px-5">
-                <div class="d-flex flex-row">
-                    <div class="col-lg-6 ">
+            <div class="container px-1 py-1">
+                <div class="d-flex flex-row flex-wrap">
+                    <div class="col-lg-6 mx-5">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h2 class="display-2 lh-1 mb-3">Contrast Checker</h2>
-                            <p class="lead fw-normal text-muted mb-5">A simple tool that can check whether the background is dark or light, and proper text color that is compatible with the background 
+                            <h3 class="display-2 lh-3 mb-3">Color Light Checker</h3>
+                            <p class="lead fw-normal text-muted mb-5">A simple tool that can check whether the background is dark or light. Using Artificial Neural Network (ANN) - Supervised
                                
                         </div>
-                      
-                    
-                     
+        
                         <p class="lead fw-normal">Pick a color 🎨</p>
-                     
                         <div id="swatch">
                             <input type="color" id="color" name="color" value="#000000">
                         </div>
                        
                     </div>
-                    <div class="container row justify-content-center" id="example">
-                        <p id="change" class="text-center"><p id="h" class="text-center"></p></p>
+                    <div class="col-lg-6 row justify-content-center" id="example">
+                        <div class="container row justify-content-center">
+                            <p id="change" class="text-center"><p id="h" class="text-center"></p></p>
+                        </div>
                     </div>
-                   
                 </div>
-             
-               
-               
+          
             </div>
         </header>
-        <div style="margin-left:100px">
-            <ul style="margin-top: 50px">
-                RGB Decimal Converted Values
+     
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <div style="margin-left:100px">
+                    <ul style="margin-top: 50px">
+                        <p>Data Gathered</p>
+                        RGB Decimal Converted Values
+                    
+                        <li id="r">
             
-                <li id="r">
-    
-                </li>
-                <li id="g">
-                    
-                </li>
-                <li id="b">
-                    
-                </li>
-            </ul>
-
-        </div>
+                        </li>
+                        <li id="g">
+                            
+                        </li>
+                        <li id="b">
+                            
+                        </li>
+                    </ul>
+                    <ul id="c">
+                      
+                    </ul>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div style="margin-left:100px">
+                    <ul id="lol" style="margin-top: 50px">
+                        <p>Neural Network Config Hard Coded</p>
+                        Supervised Neural Network
+                        <li>Activation Function: <span id = "act"></li>
+                        <li>Hidden Layer: <span id = "hid"></li>
+                        <li>Learning Rate: <span id = "lea"></span></li>
+                        <li>Input Size: <span id = "inp"></span></li>
+                        <li>Output Size: <span id = "out"></span></li>
+                        <li>Error Rate: <span id = "err">0</span></li>
+                        <li>Iterations: <span id = "ite">0</span></li>
+                    </ul>
+                    <ul id="data">
+                        
+                    </ul>
+                </div>
+              </div>
+              <div class="col-sm">
+                <div style="margin-left:100px">
+                    <ul id="lol" style="margin-top: 50px">
+                        <p>Diagram</p>
+                        <div class="" id="diagram"></div>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         <script src="//unpkg.com/brain.js"></script>
         <script src="script.js"></script>    
         <script src="hexToRgb.js"></script>
