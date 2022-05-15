@@ -37,7 +37,7 @@ const config = {
   activation: 'sigmoid',
   inputSize: 5,
   inputRange: 5,
-  hiddenLayers: [3],
+  hiddenLayers: [5], //[nodes]
   outputSize: 5,
   learningRate: 0.1,
   decayRate: 0.999,
@@ -74,7 +74,7 @@ input.addEventListener("change", (e) => {
   r.innerHTML = "R: " + rgb.r
   g.innerHTML = "G: " + rgb.g
   b.innerHTML = "B: " + rgb.b
-  c.innerHTML = "Color Lightness: " + result
+  c.innerHTML = "Color Lightness: <b>" + result
   err.innerHTML = lol['error'].toFixed(5)
   ite.innerHTML = lol['iterations']
   console.log(rgb);
@@ -90,7 +90,7 @@ const outputSize = config['outputSize']
 
 
 act.innerHTML = activation
-hid.innerHTML = hiddenLayers[0]
+hid.innerHTML = hiddenLayers.length
 lea.innerHTML = learningRate
 inp.innerHTML = inputSize
 out.innerHTML = outputSize

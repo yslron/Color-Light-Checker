@@ -61,3 +61,29 @@ body {
   ::-moz-focus-inner{
     padding: 0;
   }
+  #inputGraphic{
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #7fbf7f;
+    border: solid 1px black;
+  }
+  #outputGraphic{
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #b1caf6;
+    border: solid 1px black;
+    border-radius: 50%;
+  }
+  #HiddentLayer{
+    width: 25px;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffbfa7;
+    border: solid 1px black;
+    border-radius: 50%;
+  }
