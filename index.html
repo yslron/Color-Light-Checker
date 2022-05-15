@@ -49,23 +49,29 @@
                         </div>
                        
                     </div>
+                    <div>
                     <div class="col-lg-6 row justify-content-center" id="example">
                         <div class="container row justify-content-center">
                             <p id="change" class="text-center"><p id="h" class="text-center"></p></p>
                         </div>
+                        
+                    </div>
+                    <div style="margin-top: 20px">
+                        <p id="c"></p>
+                    </div>
                     </div>
                 </div>
           
             </div>
         </header>
-     
+    
         <div class="container">
             <div class="row">
-              <div class="col-sm">
-                <div style="margin-left:100px">
+              <div class="col-sm-3">
+                <div style="margin-left:0px">
                     <ul style="margin-top: 50px">
                         <p>Data Gathered</p>
-                        RGB Decimal Converted Values
+                        RGB Decimal
                     
                         <li id="r">
             
@@ -77,18 +83,19 @@
                             
                         </li>
                     </ul>
-                    <ul id="c">
+                    <!--<ul id="c">
                       
-                    </ul>
+                    </ul>-->
                 </div>
               </div>
               <div class="col-sm">
-                <div style="margin-left:100px">
+                <div style="margin-left:0 px">
                     <ul id="lol" style="margin-top: 50px">
-                        <p>Neural Network Config Hard Coded</p>
+                        <p>Neural Network Config</p>
                         Supervised Neural Network
                         <li>Activation Function: <span id = "act"></li>
                         <li>Hidden Layer: <span id = "hid"></li>
+                        <li>Nodes: <span id = "nod"></li>
                         <li>Learning Rate: <span id = "lea"></span></li>
                         <li>Input Size: <span id = "inp"></span></li>
                         <li>Output Size: <span id = "out"></span></li>
@@ -100,11 +107,10 @@
                     </ul>
                 </div>
               </div>
-              <div class="col-sm">
-                <div style="margin-left:100px">
+              <div class="col-sm-2">
+                <div style="margin-left:0px">
                     <ul id="lol" style="margin-top: 50px;  list-style-type: none">
                         <p>Diagram</p>
-                        <div  id="diagram"></div>
                         <div class="row justify-content-start">
                             <div class="col-1">
                               <div id="inputGraphic"></div>
@@ -132,6 +138,10 @@
                     </ul>
                 </div>
               </div>
+              <div class="col-lg ">
+                <div class="mt-5" id="diagram"></div>
+              </div>
+            
             </div>
           </div>
         <script src="//unpkg.com/brain.js"></script>
