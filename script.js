@@ -44,6 +44,7 @@ const trainingData = [
   { input: { r: 0.5, g: 0.39, b: 0 }, output: { Dark: 1 } },
   { input: { r: 0.48, g: 0.54, b: 0 }, output: { Dark: 1 } },
 
+  
 ];
 
 
